@@ -64,3 +64,221 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+/* Generic Styling */
+.container {
+	width: 90vw;
+	margin: 0 auto;
+}
+
+hr{
+	margin-top: 50px;
+}
+
+
+/* Footer Styling */
+footer{
+	text-align: center;
+	padding: 70px 100px;
+}
+
+ /* Navigation Styling */
+.container header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav a{
+	display: inline-flex;
+	margin: 30px;
+	text-decoration: none;
+	color: gray;
+	font-weight: 200;
+}
+
+/* Home Page Styling */
+/* main section */
+.main{
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+	align-items: center;
+}
+
+.main h1{
+	font-size: 80px;
+}
+
+.main a{
+	border: 2px solid black;
+	padding: 3px 40px;
+	text-decoration: none;
+	color: black;
+}
+
+/* sec1 & sec2 */
+.sec1 , .sec2 {
+	display: flex;
+	margin: 40px 0;
+}
+
+.sec1_features{
+	margin-right: 20px;
+}
+
+.sec2:not(:last-child) {
+	margin-right: 50px; 
+}
+
+
+/* contact */
+.contact {
+	margin-top: 40px;
+	line-height: 25px;
+}
+
+.address{
+	display: inline-flex;
+	margin-bottom: 20px;
+}
+
+.container .img1 img {
+	width: 100%;
+}
+
+
+/* Services Page Styling */
+
+
+.container .img2 img {
+	width: 100%;
+}
+
+.container .services{
+	margin-top: 40px;
+}
+
+.services h2{
+	font-size: 25px;
+}
+
+.services-about {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 40px;
+}
+.services-about .services-items{
+	width: 48%;
+	padding: 20px;
+	margin-bottom: 40px;
+	border: 2px solid black;
+	background-color: lightgray;
+
+}
+
+.services-about .services-items:nth-child(odd){
+	margin-right: 40px
+}
+
+.services-about .services-items a{
+	display: inline-flex;
+	margin-top: 20px;
+	padding: 10px 40px;
+	border: 2px solid black;
+	background-color: white;
+	border-radius: 6px;
+	text-decoration: none;
+}
+
+.services-facts{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 40px;
+
+}
+
+.services-facts div {
+	width: 50%;
+}
+
+.services-facts .services-info {
+	margin-right: 40px;
+	line-height: 1.5;
+}
+
+.service-list{
+	list-style-type: square;
+	margin: 20px;
+}
+
+.services-info-img{
+	width: 100%;
+}
+
+/* Contact Page Styling */
+
+.container .img3 img {
+	width: 90vw;
+	height: 300px;;
+	background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+}
+
+.container .form{
+ 	display: flex;
+ 	justify-content: center;
+	margin: 20px 0 50px;
+
+}
+
+.container .form-heading {
+	text-align: center;
+	font-size: 60px;
+	margin-top: 20px;
+	
+}
+.form-list{
+  	list-style-type: none;
+  	padding: 30px;
+	margin: 0 auto;
+	border: 3px dashed black;
+	width: 40vw;
+	text-align: center;
+	background-color: lightgray;
+}
+
+.form-list li {
+	display: flex;
+	justify-content: space-between;
+}
+
+.form-list li label{
+	font-size: 20px;
+}
+.form-list li label,
+.form-list li p{
+	padding: 8px;
+  	font-weight: 300;
+  	letter-spacing: .09em;
+  	text-transform: uppercase;
+}
+
+.form-list li input,
+.form-list li textarea  {
+	padding: 15px; 
+	border: none;
+	width: 60%;
+	margin-bottom: 10px
+}
+
+.form-list li button {
+	border: 2px solid black;
+	padding: 3px 40px;
+	text-decoration: none;
+	color: black;
+	margin-left: auto;
+	
+}
