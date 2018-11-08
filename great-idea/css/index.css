@@ -73,64 +73,8 @@ h1, h2, h3, h4, h5 {
 }
 
 
-@media(max-width: 600px){
-  .container {
-    /* border: 5px green solid; */
-    padding: 20px;
-  }
-  
-  .container .header {
-    flex-wrap: wrap;
-  }
-  .container .nav {
-    order: 1;
-  }
-  .container .nav .collapse{
-    display: none;
-  }
-  
-  .container .img2 {
-    display: none;
-  }
-  
-  .container .services {
-     text-align: center;
-  }
-  
-  .container .services h2{
-     font-size: 50px;
-  }
-  
-  .container .services p{
-     font-size: 18px;
-  }
-  
-  .container .services-about {
-    display: block;
-    text-align: center;
-  }
-  .container .services-about .services-items:nth-child(odd) {
-    margin-right: 0;
-  }
-  .container .services-about .services-items{
-    width: 100%; 
-  }
-  .container .services-facts{
-    display: block;
-  }
-  .container .services-facts img{
-    display: none;
-  }
-  .container .services-facts .services-info{
-    width: 100%;
-    text-align: center;
-  }
-  
-  .container .service-list{
-    list-style-type: none;  
-  }
-    
-  }
+
+
 hr{
 	margin-top: 50px;
 }
@@ -341,4 +285,86 @@ footer{
 	color: black;
 	margin-left: auto;
 	
+}
+
+
+@media(max-width: 700px){
+	.container {
+	  /* border: 5px green solid; */
+	  padding: 20px;
+	}
+	
+	.container .header {
+	  flex-wrap: wrap;
+	}
+	.container .nav {
+	  order: 1;
+	}
+	.container .nav .collapse{
+	  display: none;
+	}
+	
+	.container .img2 {
+	  display: none;
+	}
+	
+	.container .services {
+	   text-align: center;
+	}
+	
+	.container .services h2{
+	   font-size: 50px;
+	}
+	
+	.container .services p{
+	   font-size: 18px;
+	}
+	
+	.container .services-about {
+	  display: block;
+	  text-align: center;
+	}
+	.container .services-about .services-items:nth-child(odd) {
+	  margin-right: 0;
+	}
+	.container .services-about .services-items{
+	  width: 100%; 
+	}
+	.container .services-facts{
+	  display: block;
+	}
+	.container .services-facts img{
+	  display: none;
+	}
+	.container .services-facts .services-info{
+	  width: 100%;
+	  text-align: center;
+	}
+	
+	.container .service-list{
+	  list-style-type: none;  
+	  border: 2px black dashed;
+	}  
+  }
+
+@media(max-width: 1200px){
+	.container .header {
+		flex-wrap: wrap;
+		justify-content: center;
+		flex-direction: column;
+	}
+	.container .nav {
+		order: 1;
+	  }
+
+	.container .nav a{
+		margin: 30px 20px;
+	}
+
+	.container header .logo{
+		/* margin-top: 30px; */
+	}
+	.services-about .services-items:nth-child(odd){
+		margin-right: 20px
+	}
 }
